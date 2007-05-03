@@ -22,6 +22,7 @@ BuildRequires:  perl-Devel-StackTrace
 BuildRequires:  perl-YAML
 BuildRequires:  perl-Module-Pluggable
 BuildRequires:  perl-PadWalker
+BuildRequires:  perl(YAML::Syck)
 BuildArch:      noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
