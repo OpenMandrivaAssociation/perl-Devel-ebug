@@ -1,11 +1,11 @@
 %define module	Devel-ebug
 %define name	perl-%{module}
-%define version 0.46
-%define release %mkrel 1
+%define version 0.48
+%define rel     1
 
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel %{rel}
 Summary:	A simple, extensible Perl debugger 
 License:	GPL or Artistic
 Group:		Development/Perl
