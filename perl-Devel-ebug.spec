@@ -24,7 +24,6 @@ BuildRequires:  perl-Module-Pluggable
 BuildRequires:  perl-PadWalker
 BuildRequires:  perl(YAML::Syck)
 BuildArch:      noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 A debugger is a computer program that is used to debug other programs. 
