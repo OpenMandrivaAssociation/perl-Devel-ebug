@@ -1,6 +1,6 @@
 %define module	Devel-ebug
 %define name	perl-%{module}
-%define version 0.48
+%define version 0.49
 %define rel     1
 
 Name:		%{name}
