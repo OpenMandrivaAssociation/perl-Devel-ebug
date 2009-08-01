@@ -1,16 +1,16 @@
-%define module	Devel-ebug
-%define name	perl-%{module}
-%define version 0.49
-%define rel     1
+%define upstream_name	 Devel-ebug
+%define upstream_version 0.49
 
-Name:		%{name}
-Version:	%{version}
-Release:	%mkrel %{rel}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	A simple, extensible Perl debugger 
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/L/LB/LBROCARD/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/L/LB/LBROCARD/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
@@ -33,7 +33,7 @@ this module, you may easily write a Perl debugger to debug your programs.
 
 Alternatively, it comes with an interactive debugger, ebug.
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
@@ -54,4 +54,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/Devel
 %{_mandir}/*/*
 %{_bindir}/*
-
