@@ -8,7 +8,7 @@ Release:    %mkrel 2
 Summary:	A simple, extensible Perl debugger 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/L/LB/LBROCARD/%{upstream_name}-%{upstream_version}.tar.bz2
 
 %if %{mdkversion} < 1010
