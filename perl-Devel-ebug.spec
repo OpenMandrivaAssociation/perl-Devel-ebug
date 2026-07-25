@@ -1,15 +1,15 @@
 %define upstream_name	 Devel-ebug
-%define upstream_version 0.49
+%define upstream_version 0.64
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Version:    %{upstream_version}
+Release:    1
 
 Summary:	A simple, extensible Perl debugger 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/L/LB/LBROCARD/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://github.com/uperl/Devel-ebug
+Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Devel-ebug-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
